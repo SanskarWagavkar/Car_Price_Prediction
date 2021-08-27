@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sample 3 Car Price Prediction</title><br>
+    <center><h1>Car Price Prediction</h1></center><br><br>
+    <center><form method="POST">
+        Enter Km Driven :- <input id="km" name="km" placeholder="KM"><br><br>
+        Enter Owner :- <input id="owner" name="owner" placeholder="Owner"><br><br>
+        Enter Mileage in KMPL :- <input id="mileage" name="mileage" placeholder="Mileage"><br><br>
+        Enter CC :- <input id="cc" name="cc" placeholder="CC"><br><br>
+        Enter BHP :- <input id="bhp" name="bhp" placeholder="BHP"><br><br>
+        Enter Seats :- <input id="seats" name="seats" placeholder="Seats"><br><br>
+        Enter Age of the Car :- <input id="age" name="age" placeholder="Age"><br><br>
+        Select Fuel Type :- 
+        <select id="fuel" name="fuel">
+            <option value="CNG">CNG</option>
+            <option value="Diesel">Diesel</option>
+            <option value="LPG">LPG</option>
+            <option value="Petrol">Petrol</option>
+        </select><br><br>
+        Select Transmission :- 
+        <select id="Transmission" name="transmission">
+            <option value="Automatic">Automatic</option>
+            <option value="Manual">Manual</option>
+        </select>
+        <h1><button type="submit">Submit</button></h1>
+
+        <h3>{{ prediction_price }}</h3>
+    </form></center>
+</head>
+<body>
+    
+</body>
+</html>
