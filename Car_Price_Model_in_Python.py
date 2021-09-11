@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
 from sklearn.tree import DecisionTreeRegressor
-import pickle
+
 
 ## Owner to int function
 def Owner_to_int(Value):
@@ -114,7 +114,6 @@ def main_model(preditcion):
     ## predicting using predict function        
     Predict_Price = dtr.predict([preditcion])
     print(f"The Price of an car is :- {int(Predict_Price)} Rs")
-    pickle.dump(dtr, open("model.pkl","wb"))
     
 
 ## doing prediction 
